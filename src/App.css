@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+  background-image: url("./components/assets/hero.jpg");
+  height: 716px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-child {
+  background: #FFF3E3;
+  position: absolute;
+  bottom: 100px;
+  right: 70px;
+  padding: 40px 30px;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-child button {
+  background: #B88E2F;
+  padding: 15px 30px;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+.hero-child h1 {
+  color: #B88E2F;
+  line-height: 60px;
+}
+
+.cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.cards h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #333333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #666666;
+  padding-bottom: 30px;
+}
+
+.card img {
+  width: 380px;
+  height: 480px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.card {
+  width: 380px;
+}
+
+footer {
+  border-top: 1px solid #0000002B;
+  padding: 50px 0;
+  align-items: center;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+.links span p {
+  color: #9F9F9F;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inp p {
+  color: #9F9F9F;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.funiro h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.funiro p {
+  color: #9F9F9F;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.all {
+  position: relative;
+  right: 505px;
+  top: 20px;
+}
+
+.fon {
+  height: 316px;
+  background-image: url("./components/assets/background.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fon-child {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fon-child h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+
+}
+
+.fon-child span p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+
+}
+
+.fon-child span p:nth-child(2) {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.fon-child span {
+  display: flex;
+  gap: 5px;
+}
+
+.shop {
+  background-color: #7f7f7f;
+  padding: 50px 50px;
+  display: flex;
+}
+
+.sarlavha {
+  height: 50px;
+  background: #F9F1E7;
+
+}
+
+.one {
+  padding: 10px 15px;
+  border: 1px solid #9F9F9F;
+  border-radius: 10px;
+}
+
+.trr td:nth-child(1) {
+  /* justify-content: center; */
+  align-items: center;
+  width: 230px;
+
+}
+
+.table {
+  background-color: #ff8c00;
+  width: 800px;
+
+}
+
+.td1 {
+  position: relative;
+  right: 550px;
+}
+
+.td2 {
+  position: relative;
+  right: 490px;
+}
+
+.td3 {
+  position: relative;
+  right: 300px;
+}
+
+.td4 {
+  position: relative;
+  right: 285px;
+}
+.td4 img{
+  width: 50px;
+  height: 50px;
+}
+
+.box {
+  background: #F9F1E7;
+  width: 393px;
+  height: 390px;
+
+}
+.box h2{
+font-size: 32px;
+font-weight: 600;
+text-align: center;
+padding-top: 30px;
+}
+.span1{
+  padding-top: 40px;
+  padding-left: 80px;
+}
+.span2{
+  padding-top: 40px;
+  padding-left: 80px;
+}
+.chek{
+  position: relative;
+  top: 50px;
+  left: 130px;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
 }
