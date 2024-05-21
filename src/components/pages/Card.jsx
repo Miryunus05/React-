@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+
 import { NavLink } from 'react-router-dom'
 
 import img1 from "../assets/Logos.svg"
@@ -6,8 +6,8 @@ import img2 from "../assets/arrow.svg"
 import img3 from "../assets/shop.png"
 import img4 from "../assets/delete.svg"
 
-export default class Card extends Component {
-    render() {
+const Card = () => {
+
         return (
             <div>
                 <div className='fon'>
@@ -57,4 +57,4 @@ export default class Card extends Component {
             </div>
         )
     }
-}
+    export default Card;

@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import { Outlet, NavLink, Link } from 'react-router-dom'
 import logo from "../assets/logo.svg"
 import img1 from "../assets/heart.svg"
@@ -7,19 +6,26 @@ import img3 from "../assets/search.svg"
 import img4 from "../assets/shopping.svg"
 
 
-export default class Layout extends Component {
-    render() {
-        return (
-            <div>
-                <nav className='flex justify-between items-center px-12 pt-5'>
-                    <NavLink to="/"><img src={logo} alt="" /></NavLink>
+import { useState } from 'react';
+
+const Layout = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <nav className='flex justify-between items-center px-12 pt-5'>
+      <NavLink to="/"><img src={logo} alt="" /></NavLink>
                     <ul className=' underline flex gap-12 p-4'>
                         <li ><NavLink className={({ isActive, isPending }) =>
                             isPending ? "text-blue-300" : isActive ? "text-red-300" : "no-underline	"
                         } to="/">Home</NavLink></li>
                         <li><NavLink className={({ isActive, isPending }) =>
                             isPending ? "text-blue-300" : isActive ? "text-red-300" : "no-underline	"
-                        } to="/checkout">Shop</NavLink></li>
+                        } to="/shop">Shop</NavLink></li>
                         <li><NavLink className={({ isActive, isPending }) =>
                             isPending ? "text-blue-300" : isActive ? "text-red-300" : "no-underline	"
                         } to="/card">About</NavLink></li>
@@ -27,6 +33,10 @@ export default class Layout extends Component {
                             isPending ? "text-blue-300" : isActive ? "text-red-300" : "no-underline	"
                         } to="/contact">Contact</NavLink></li>
                     </ul>
+                    <span className='flex gap-5'>
+                        <NavLink to='/registratsiya'>Sign up</NavLink>
+                        <NavLink to='/login'>Login</NavLink>
+                    </span>
                     <div>
                         <ul className='flex gap-9'>
                             <li><NavLink to="#"><img src={img2} alt="" /></NavLink></li>
@@ -35,12 +45,12 @@ export default class Layout extends Component {
                             <li><NavLink to="#"><img src={img4} alt="" /></NavLink></li>
                         </ul>
                     </div>
-                </nav>
-                <section>
-                    <Outlet />
-                </section>
-                <footer className='flex flex-col justify-center	'>
-                    <div className='flex justify-center	 gap-36'>
+      </nav>
+      <section>
+        <Outlet />
+      </section>
+      <footer className='flex flex-col justify-center'>
+      <div className='flex justify-center	 gap-36'>
                         <div className='funiro'>
                             <h2>Funiro.</h2><br />
                             <p>400 University Drive Suite 200 Coral <br /> Gables, <br />
@@ -73,9 +83,9 @@ export default class Layout extends Component {
                     </div>
                     <hr className='w-10/12	' />
                         <p className='all'>2024 furino. All rights reverved</p>
-                </footer>
+      </footer>
+    </div>
+  );
+};
 
-            </div>
-        )
-    }
-}
+export default Layout;

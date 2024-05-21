@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
 import img1 from "../assets/Logos.svg"
 import img2 from "../assets/arrow.svg"
 
 
-export default class Checkout extends Component {
-  render() {
+const Checkout = () => {
     return (
       <div>
                 <div className='fon'>
@@ -21,4 +19,6 @@ export default class Checkout extends Component {
       </div>
     )
   }
-}
+
+  export default Checkout; 
+
