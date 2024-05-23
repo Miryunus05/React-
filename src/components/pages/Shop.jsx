@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom'
-import React from 'react'
+import React, { useEffect , useState} from 'react'
+import {backendUrl} from "../constantos/backendUrl"
+import axios from 'axios'
 import img1 from "../assets/Logos.svg"
 import img2 from "../assets/arrow.svg"
 import images from "../assets/image1.png"
@@ -15,6 +17,10 @@ import icon3 from "../assets/icon3.svg"
 import icon4 from "../assets/icon4.svg"
 
 export default function Shop() {
+
+
+
+
     return (
         <div>
             <div className='fon'>

@@ -6,14 +6,10 @@ import img3 from "../assets/search.svg"
 import img4 from "../assets/shopping.svg"
 
 
-import { useState } from 'react';
 
 const Layout = () => {
-  const [count, setCount] = useState(0);
 
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
+
 
   return (
     <div>
